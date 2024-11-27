@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 
 export default function UTMGenerator() {
   // 기본 소스와 매체 옵션
@@ -164,7 +165,19 @@ export default function UTMGenerator() {
 
 
   return (
-    <div className="p-8 max-w-4xl mx-auto">
+    <>
+      <Head>
+        <title>UTM 생성기 - 마케팅 URL 추적을 위한 간편한 도구</title>
+        <meta name="description" content="UTM 태그를 쉽고 빠르게 생성하세요. 여러 소스와 매체를 한 번에 처리할 수 있는 무료 UTM 생성기입니다." />
+        <meta name="keywords" content="UTM 생성기, UTM builder, UTM 태그, 마케팅 도구, URL 추적" />
+        <meta property="og:title" content="UTM 생성기 - 마케팅 URL 추적을 위한 간편한 도구" />
+        <meta property="og:description" content="UTM 태그를 쉽고 빠르게 생성하세요. 여러 소스와 매체를 한 번에 처리할 수 있는 무료 UTM 생성기입니다." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://utm-generator-zeta.vercel.app/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <div className="p-8 max-w-4xl mx-auto">
+
       <h1 className="text-2xl font-bold mb-6">UTM 일괄 생성기</h1>
 
       <div className="space-y-6">
