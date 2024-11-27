@@ -154,6 +154,15 @@ export default function UTMGenerator() {
   return (
     <>
       <Head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-65TMBKVV6G"></script>
+        <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-65TMBKVV6G');
+        </script>
         <title>UTM 생성기 - 마케팅 URL 추적을 위한 간편한 도구</title>
         <meta name="google-site-verification" content="ZI8-7owogWtSxf4iotcm4ARvlwweLmEl3FStO3zzIHM" />
         <meta name="description" content="UTM 태그를 쉽고 빠르게 생성하세요. 여러 소스와 매체를 한 번에 처리할 수 있는 무료 UTM 생성기입니다." />
