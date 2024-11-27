@@ -155,6 +155,7 @@ export default function UTMGenerator() {
     <>
       <Head>
         <title>UTM 생성기 - 마케팅 URL 추적을 위한 간편한 도구</title>
+        <meta name="google-site-verification" content="ZI8-7owogWtSxf4iotcm4ARvlwweLmEl3FStO3zzIHM" />
         <meta name="description" content="UTM 태그를 쉽고 빠르게 생성하세요. 여러 소스와 매체를 한 번에 처리할 수 있는 무료 UTM 생성기입니다." />
         <meta name="keywords" content="UTM 생성기, UTM builder, UTM 태그, 마케팅 도구, URL 추적" />
         <meta property="og:title" content="UTM 생성기 - 마케팅 URL 추적을 위한 간편한 도구" />
