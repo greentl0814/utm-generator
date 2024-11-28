@@ -384,9 +384,14 @@ export default function UTMGenerator() {
           )}
         </div>
         <footer className="mt-8 pt-8 border-t text-center text-gray-600">
-          <Link href="/privacy" className="hover:text-gray-900">
-            개인정보처리방침
-          </Link>
+          <nav className="space-x-4">
+            <Link href="/guide" className="hover:text-gray-900">
+              사용 가이드
+            </Link>
+            <Link href="/privacy" className="hover:text-gray-900">
+              개인정보처리방침
+            </Link>
+          </nav>
         </footer>
       </div>
     </>
