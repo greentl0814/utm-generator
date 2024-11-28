@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Script from 'next/script';
 
 export default function Guide() {
   return (
@@ -9,6 +10,15 @@ export default function Guide() {
         <title>UTM 태그 사용 가이드 - UTM 생성기</title>
         <meta name="description" content="UTM 태그의 기본 개념부터 실제 활용 방법까지 상세히 알아보세요." />
       </Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-65TMBKVV6G" strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-65TMBKVV6G');
+        `}
+      </Script>
       <div className="p-8 max-w-4xl mx-auto">
         <Link href="/" className="text-blue-500 hover:text-blue-700 mb-4 inline-block">
           ← 메인으로 돌아가기
