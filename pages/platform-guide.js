@@ -58,8 +58,8 @@ export default function PlatformGuide() {
               <div>
                 <h3 className="font-medium text-lg mb-2">2. 광고 관리자 설정 방법</h3>
                 <ol className="list-decimal list-inside space-y-2 text-gray-700">
-                  <li>광고 세트 생성 시 'URL 매개변수' 섹션 확인</li>
-                  <li>웹사이트 URL 입력 후 '매개변수 작성' 선택</li>
+                  <li>광고 세트 생성 시 &quot;URL 매개변수&quot; 섹션 확인</li>
+                  <li>웹사이트 URL 입력 후 &quot;매개변수 작성&quot; 선택</li>
                   <li>각 UTM 파라미터 입력</li>
                   <li>동적 매개변수 활용 가능 (광고 ID, 광고 세트명 등)</li>
                 </ol>
