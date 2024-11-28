@@ -29,6 +29,7 @@ export default function UTMGenerator() {
   const [term, setTerm] = useState('');
   const [generatedUrls, setGeneratedUrls] = useState([]);
   const [error, setError] = useState('');
+  const [copyMessage, setCopyMessage] = useState('');
 
   const validateUrl = (url) => {
     try {
@@ -126,6 +127,10 @@ export default function UTMGenerator() {
 
   const copyToClipboard = (url) => {
     navigator.clipboard.writeText(url);
+    setCopyMessage('URL이 복사되었습니다!');
+    setTimeout(() => {
+       setCopyMessage('');
+    }, 2000);
   };
 
   const downloadExcel = () => {
@@ -353,6 +358,11 @@ export default function UTMGenerator() {
                 </button>
               </div>
               <div className="space-y-2">
+                {copyMessage && (
+                  <div className="fixed bottom-4 right-4 bg-black text-white px-4 py-2 rounded-lg shadow-lg">
+                    {copyMessage}
+                  </div>
+                )}
                 {generatedUrls.map((item, index) => (
                   <div key={index} className="flex items-center gap-2 bg-gray-50 p-3 rounded">
                     <div className="flex-1 break-all">
