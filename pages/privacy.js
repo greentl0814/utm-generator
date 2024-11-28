@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Script from 'next/script';
 
 export default function Privacy() {
   return (
@@ -9,6 +10,15 @@ export default function Privacy() {
         <title>개인정보처리방침 - UTM 생성기</title>
         <meta name="robots" content="noindex" /> {/* 검색엔진에 노출되지 않도록 설정 */}
       </Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-65TMBKVV6G" strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-65TMBKVV6G');
+        `}
+      </Script>
       <div className="p-8 max-w-4xl mx-auto">
         <Link href="/" className="text-blue-500 hover:text-blue-700 mb-4 inline-block">
           ← 메인으로 돌아가기
