@@ -388,6 +388,9 @@ export default function UTMGenerator() {
             <Link href="/guide" className="hover:text-gray-900">
               사용 가이드
             </Link>
+            <Link href="/platform-guide" className="hover:text-gray-900">
+              플랫폼별 가이드
+            </Link>
             <Link href="/privacy" className="hover:text-gray-900">
               개인정보처리방침
             </Link>
