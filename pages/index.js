@@ -380,6 +380,11 @@ export default function UTMGenerator() {
             </div>
           )}
         </div>
+        <footer className="mt-8 pt-8 border-t text-center text-gray-600">
+          <Link href="/privacy" className="hover:text-gray-900">
+            개인정보처리방침
+          </Link>
+        </footer>
       </div>
     </>
   );
