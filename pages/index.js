@@ -29,7 +29,6 @@ export default function Redirect() {
         <title>UTM Generator - 새로운 주소로 이동합니다</title>
         <meta name="robots" content="noindex, nofollow" />
       </Head>
-
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center p-8 max-w-lg">
           <div className="mb-6">
@@ -42,7 +41,6 @@ export default function Redirect() {
               {countdown}초 후 자동으로 이동됩니다
             </div>
           </div>
-
 
             href={newUrl}
             className="inline-block bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition-colors"
